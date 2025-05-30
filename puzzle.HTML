@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Osmosis Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CELLQUEST: Osmosis Puzzle</h1>
+  <div class="game-box">
+    <div class="zone">
+      <h2>Inside Cell</h2>
+      <input type="number" id="inside" value="7">
+      <div class="water-bar" id="inside-bar"></div>
+    </div>
+
+    <div class="membrane">||</div>
+
+    <div class="zone">
+      <h2>Outside Cell</h2>
+      <input type="number" id="outside" value="3">
+      <div class="water-bar" id="outside-bar"></div>
+    </div>
+  </div>
+
+  <button onclick="simulate()">Simulate Osmosis</button>
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
